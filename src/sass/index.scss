@@ -1,0 +1,225 @@
+@import '_index';
+.top{
+  height: 80px;
+  background:url('../img/toptupian.jpg') no-repeat;
+}
+.header-bar{
+  height: 36px;
+  color: #333;
+  background: #ddd;
+  ul:nth-child(1){
+    >li:nth-child(1){
+      margin-right: 25px;
+      ul{
+        position:absolute;
+        display:none;
+        background-color: #fff;
+        li{
+          a{
+            @extend %a;
+          }
+        }
+      }
+    }
+    >li:nth-child(2){
+      ul{
+        position:absolute;
+        background: #fff;
+        display:none;
+        li{       
+          a{
+            @extend %a;
+          }
+        }
+      }
+      
+    }
+    float:left;
+    li{
+      &:hover{
+        ul{display: block;}
+        color:red;
+        background: #fff;
+      }
+      float:left;
+      width: 80px;
+      height: 36px;
+      line-height: 36px;
+      position:relative;
+      img{
+        width: 16px;
+        height: 11px;
+        margin-right: 5px;
+        margin-bottom: 3px;
+      }
+    }
+  }
+  ul:nth-child(2){
+    li{
+      i{width: 11px;height: 20px;
+        display:inline-block;
+        background:url('../img/appCodeImg.png');
+        position: absolute;
+        top:9px;
+        left:-20px; 
+      }
+      .appcode{
+        width: 122px;
+        height: 138px;
+        background:url('../img/appCodeImg.png')
+        no-repeat -46px 0;
+        position:absolute;
+        z-index: 10;
+        left:-24px;
+        top:30px;
+        display:none;
+      }
+      a{color:#000;}
+      position:relative;
+      float:left;
+      height: 36px;
+      line-height:36px ;
+      margin-right: 20px;
+    }
+    li:nth-child(1){
+      &:hover{
+        .appcode{display:block}
+      }
+    }
+    >li:nth-child(2){
+      span{color:red}
+    }
+    li:nth-child(3){
+      span{color:red}
+    }
+  }
+}
+header{
+  height: 76px;
+  margin:50px 0 30px 0;
+  .logo{
+    width: 400px;
+  }
+  .search{
+    width: 510px;
+    height: 44px;
+    a{
+      margin:0 5px;
+    }
+    a:nth-child(1),a:nth-child(2),
+    a:nth-child(4),a:nth-child(7){
+      color:red;
+    }
+  }
+  //购物车
+  .cart{
+    a{
+      display: block;
+      width: 124px;
+      height: 44px;
+      background: #ececec;
+      font-size: 16px;
+      line-height: 44px;
+      text-align: center;
+      span:nth-child(1){
+        color:red;
+      }
+    }
+  }
+}
+nav{
+  
+  ul{
+    li{
+      position:relative;
+      img{
+        position:absolute;
+        left:30px;
+        top:0;
+      }
+      float:left;
+      a{
+        @extend %nav-h ;
+        display:block;
+        padding: 0 20px;
+      }
+    }
+  }
+  .allgoods{
+    background: #163672;
+    &:hover{
+      .b-l{
+        display:block;
+      }
+    >a{
+    display:block;
+    width: 160px;
+    background: #163672;
+    @extend %nav-h;
+    padding-left: 26px;
+    font-weight: 500;
+    color:#fff;
+    
+    }
+    }
+    
+  
+  //商品分类
+  >.b-l{
+    
+    display: none;
+    width: 160px;
+    background: #183d83;
+    position:relative;
+    border:1px solid #183d83;
+    >li{
+      &:hover{
+        .b-r{display:block;}
+      }
+      >a{
+        width: 160px;
+        padding-left: 26px;
+        display: block;
+        @extend %nav-h;
+        color:#fff;
+        &:hover{
+          color:#000;
+          background-color:#fff;
+        }
+      }
+    }
+    //三级导航
+    .b-r{
+      display:none;
+      width: 1000px;
+      // height: 585px;
+      background: #f2f2f2;
+      position:absolute;
+      left:160px;
+      top:0;
+      li{
+        float:left;
+        a{
+          &:hover{
+            color:red;
+          }
+          display:inline-block;
+          color:#000;
+          @extend %nav-h;
+          margin:0 5px;
+        }
+      }
+      .b-t{
+        width: 80px;
+        color:#333;
+        margin-right: 20px;
+        margin-left: 15px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+}
+//end 头部

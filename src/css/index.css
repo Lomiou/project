@@ -1,0 +1,83 @@
+.header-bar ul:nth-child(1) > li:nth-child(1) ul li a, .header-bar ul:nth-child(1) > li:nth-child(2) ul li a { display: block; height: 28px; line-height: 28px; padding-left: 10px; }
+
+.header-bar ul:nth-child(1) > li:nth-child(1) ul li a:hover, .header-bar ul:nth-child(1) > li:nth-child(2) ul li a:hover { color: red; }
+
+nav ul li a, nav .allgoods:hover > a, nav .allgoods > .b-l > li > a, nav .allgoods > .b-l .b-r li a { height: 45px; line-height: 45px; font-size: 14px; }
+
+.top { height: 80px; background: url("../img/toptupian.jpg") no-repeat; }
+
+.header-bar { height: 36px; color: #333; background: #ddd; }
+
+.header-bar ul:nth-child(1) { float: left; }
+
+.header-bar ul:nth-child(1) > li:nth-child(1) { margin-right: 25px; }
+
+.header-bar ul:nth-child(1) > li:nth-child(1) ul { position: absolute; display: none; background-color: #fff; }
+
+.header-bar ul:nth-child(1) > li:nth-child(2) ul { position: absolute; background: #fff; display: none; }
+
+.header-bar ul:nth-child(1) li { float: left; width: 80px; height: 36px; line-height: 36px; position: relative; }
+
+.header-bar ul:nth-child(1) li:hover { color: red; background: #fff; }
+
+.header-bar ul:nth-child(1) li:hover ul { display: block; }
+
+.header-bar ul:nth-child(1) li img { width: 16px; height: 11px; margin-right: 5px; margin-bottom: 3px; }
+
+.header-bar ul:nth-child(2) li { position: relative; float: left; height: 36px; line-height: 36px; margin-right: 20px; }
+
+.header-bar ul:nth-child(2) li i { width: 11px; height: 20px; display: inline-block; background: url("../img/appCodeImg.png"); position: absolute; top: 9px; left: -20px; }
+
+.header-bar ul:nth-child(2) li .appcode { width: 122px; height: 138px; background: url("../img/appCodeImg.png") no-repeat -46px 0; position: absolute; z-index: 10; left: -24px; top: 30px; display: none; }
+
+.header-bar ul:nth-child(2) li a { color: #000; }
+
+.header-bar ul:nth-child(2) li:nth-child(1):hover .appcode { display: block; }
+
+.header-bar ul:nth-child(2) > li:nth-child(2) span { color: red; }
+
+.header-bar ul:nth-child(2) li:nth-child(3) span { color: red; }
+
+header { height: 76px; margin: 50px 0 30px 0; }
+
+header .logo { width: 400px; }
+
+header .search { width: 510px; height: 44px; }
+
+header .search a { margin: 0 5px; }
+
+header .search a:nth-child(1), header .search a:nth-child(2), header .search a:nth-child(4), header .search a:nth-child(7) { color: red; }
+
+header .cart a { display: block; width: 124px; height: 44px; background: #ececec; font-size: 16px; line-height: 44px; text-align: center; }
+
+header .cart a span:nth-child(1) { color: red; }
+
+nav ul li { position: relative; float: left; }
+
+nav ul li img { position: absolute; left: 30px; top: 0; }
+
+nav ul li a { display: block; padding: 0 20px; }
+
+nav .allgoods { background: #163672; }
+
+nav .allgoods:hover .b-l { display: block; }
+
+nav .allgoods:hover > a { display: block; width: 160px; background: #163672; padding-left: 26px; font-weight: 500; color: #fff; }
+
+nav .allgoods > .b-l { display: none; width: 160px; background: #183d83; position: relative; border: 1px solid #183d83; }
+
+nav .allgoods > .b-l > li:hover .b-r { display: block; }
+
+nav .allgoods > .b-l > li > a { width: 160px; padding-left: 26px; display: block; color: #fff; }
+
+nav .allgoods > .b-l > li > a:hover { color: #000; background-color: #fff; }
+
+nav .allgoods > .b-l .b-r { display: none; width: 1000px; background: #f2f2f2; position: absolute; left: 160px; top: 0; }
+
+nav .allgoods > .b-l .b-r li { float: left; }
+
+nav .allgoods > .b-l .b-r li a { display: inline-block; color: #000; margin: 0 5px; }
+
+nav .allgoods > .b-l .b-r li a:hover { color: red; }
+
+nav .allgoods > .b-l .b-r .b-t { width: 80px; color: #333; margin-right: 20px; margin-left: 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
