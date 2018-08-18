@@ -81,3 +81,15 @@ nav .allgoods > .b-l .b-r li a { display: inline-block; color: #000; margin: 0 5
 nav .allgoods > .b-l .b-r li a:hover { color: red; }
 
 nav .allgoods > .b-l .b-r .b-t { width: 80px; color: #333; margin-right: 20px; margin-left: 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.newgoods { margin-top: 50px; }
+
+.newgoods .newgoods-t { text-align: center; height: 38px; line-height: 38px; margin-bottom: 10px; }
+
+.newgoods .newgoods-t strong { font-size: 25px; display: inline-block; margin-right: 5px; }
+
+.newgoods .newgoods-t span { color: #999; display: inline-block; margin-left: 5px; }
+
+.quanqiugou li { float: left; width: 25%; }
+
+.quanqiugou li a { display: block; height: 157px; background: url("../img/wrap.png") no-repeat; }

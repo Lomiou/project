@@ -223,3 +223,39 @@ nav{
 }
 }
 //end 头部
+
+//新品上架
+.newgoods{
+  margin-top: 50px;
+  .newgoods-t{
+    text-align:center;
+    height: 38px;
+    line-height: 38px;
+    margin-bottom: 10px;
+    strong{
+      font-size: 25px;
+      display: inline-block;
+      margin-right: 5px;
+    }
+    span{
+      color:#999;
+      display: inline-block;
+      margin-left: 5px;
+    }
+  }
+}
+//热卖推介
+//全球购
+.quanqiugou{
+  li{
+    float:left;
+    width: 25%;
+    a{
+      display:block;
+      
+      height: 157px;
+      background: url('../img/wrap.png') 
+      no-repeat ;
+    }
+  }
+}
