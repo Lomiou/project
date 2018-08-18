@@ -4,6 +4,40 @@
 
 nav ul li a, nav .allgoods:hover > a, nav .allgoods > .b-l > li > a, nav .allgoods > .b-l .b-r li a { height: 45px; line-height: 45px; font-size: 14px; }
 
+.quanqiugou .btn-1 { float: left; width: 25%; }
+
+.quanqiugou .btn-1 a { display: block; width: 157px; height: 157px; margin: 0 auto; background: url("../img/wrap.png") no-repeat; position: relative; }
+
+.quanqiugou .btn-2 { float: left; width: 25%; }
+
+.quanqiugou .btn-2 a { display: block; width: 157px; height: 157px; margin: 0 auto; background: url("../img/wrap.png") no-repeat; background-position: -290px 0; position: relative; }
+
+.quanqiugou .btn-3 { float: left; width: 25%; }
+
+.quanqiugou .btn-3 a { display: block; width: 157px; height: 157px; margin: 0 auto; background: url("../img/wrap.png") no-repeat; background-position: -590px 0; position: relative; }
+
+.quanqiugou .btn-4 { float: left; width: 25%; }
+
+.quanqiugou .btn-4 a { display: block; width: 157px; height: 157px; margin: 0 auto; background: url("../img/wrap.png") no-repeat; background-position: -900px 0; position: relative; }
+
+.quanqiugou .btn-5 { float: left; width: 25%; margin-top: 50px; }
+
+.quanqiugou .btn-5 a { display: block; width: 157px; height: 157px; margin: 0 auto; background: url("../img/wrap.png") no-repeat; background-position: 0 -228px; position: relative; }
+
+.quanqiugou .btn-6 { float: left; width: 25%; margin-top: 50px; }
+
+.quanqiugou .btn-6 a { display: block; width: 157px; height: 157px; margin: 0 auto; background: url("../img/wrap.png") no-repeat; background-position: -290px -228px; position: relative; }
+
+.quanqiugou .btn-7 { margin-top: 50px; float: left; width: 25%; }
+
+.quanqiugou .btn-7 a { display: block; width: 157px; height: 157px; margin: 0 auto; background: url("../img/wrap.png") no-repeat; background-position: -590px -228px; position: relative; }
+
+.quanqiugou .btn-8 { margin-top: 50px; float: left; width: 25%; }
+
+.quanqiugou .btn-8 a { display: block; width: 157px; height: 157px; margin: 0 auto; background: url("../img/wrap.png") no-repeat; background-position: -900px -228px; position: relative; }
+
+body { min-width: 1200px; }
+
 .top { height: 80px; background: url("../img/toptupian.jpg") no-repeat; }
 
 .header-bar { height: 36px; color: #333; background: #ddd; }
@@ -90,6 +124,32 @@ nav .allgoods > .b-l .b-r .b-t { width: 80px; color: #333; margin-right: 20px; m
 
 .newgoods .newgoods-t span { color: #999; display: inline-block; margin-left: 5px; }
 
-.quanqiugou li { float: left; width: 25%; }
+.quanqiugou { margin-top: 50px; }
 
-.quanqiugou li a { display: block; height: 157px; background: url("../img/wrap.png") no-repeat; }
+.popular { padding-top: 50px; }
+
+.popular .titel-tps { height: 36px; line-height: 36px; margin-bottom: 20px; text-align: center; }
+
+.popular .titel-tps h2 { font-size: 24px; font-weight: 500; display: inline-block; }
+
+.popular .titel-tps p { margin-top: 10px; color: #999; float: right; line-height: 36px; }
+
+.popular .tab { border: 1px solid #ddd; border-bottom: none; }
+
+.popular .tab .l-side { width: 240px; float: left; }
+
+.popular .tab .l-side ul { height: 156px; overflow: hidden; padding: 10px; position: relative; }
+
+.popular .tab .l-side ul li { float: left; width: 50%; }
+
+.popular .tab .l-side ul li a { display: block; padding: 0 10px; line-height: 30px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.popular .tab .activety { position: relative; float: left; width: 720px; margin: 0 -1px; border-left: 1px solid #ddd; border-right: 1px solid #ddd; }
+
+.popular .tab .r-side { width: 210px; height: 345px; overflow: hidden; position: relative; }
+
+.popular .tab .r-side ul { overflow: hidden; width: 630px; position: absolute; left: 0; top: 0; }
+
+.popular .tab .r-side ul li { float: left; text-align: center; width: 210px; padding: 0 5px; }
+
+.popular .tab .r-side ul li a { display: block; height: 66px; width: 200px; margin-top: 20px; border-bottom: 1px dashed #ddd; }

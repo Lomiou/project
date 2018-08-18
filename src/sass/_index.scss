@@ -10,3 +10,119 @@ height: 45px;
 line-height: 45px;
 font-size: 14px;
 }
+%btn-1{
+  float:left;
+  width: 25%;
+  a{
+    display:block;
+    width: 157px;
+    height: 157px;
+    margin:0 auto;
+    background: url('../img/wrap.png') 
+    no-repeat;
+    position:relative;
+  }
+}
+%btn-2{
+  float:left;
+  width: 25%;
+  a{
+    display:block;
+    width: 157px;
+    height: 157px;
+    margin:0 auto;
+    background: url('../img/wrap.png') 
+    no-repeat;
+    background-position:-290px 0;
+    position:relative;
+  }
+}
+%btn-3{
+  float:left;
+  width: 25%;
+  a{
+    display:block;
+    width: 157px;
+    height: 157px;
+    margin:0 auto;
+    background: url('../img/wrap.png') 
+    no-repeat;
+    background-position:-590px 0;
+    position:relative;
+  }
+}
+%btn-4{
+  float:left;
+  width: 25%;
+  a{
+    display:block;
+    width: 157px;
+    height: 157px;
+    margin:0 auto;
+    background: url('../img/wrap.png') 
+    no-repeat;
+    background-position:-900px 0;
+    position:relative;
+  }
+}
+%btn-5{
+  float:left;
+  width: 25%;
+  margin-top: 50px;
+  a{
+    display:block;
+    width: 157px;
+    height: 157px;
+    margin:0 auto;
+    background: url('../img/wrap.png') 
+    no-repeat;
+    background-position:0 -228px;
+    position:relative;
+  }
+}
+%btn-6{
+  float:left;
+  width: 25%;
+  margin-top: 50px;
+  a{
+    display:block;
+    width: 157px;
+    height: 157px;
+    margin:0 auto;
+    background: url('../img/wrap.png') 
+    no-repeat;
+    background-position:-290px -228px;
+    position:relative;
+  }
+}
+%btn-7{
+  margin-top: 50px;
+  float:left;
+  width: 25%;
+  a{
+    display:block;
+    width: 157px;
+    height: 157px;
+    margin:0 auto;
+    background: url('../img/wrap.png') 
+    no-repeat;
+    background-position:-590px -228px;
+    position:relative;
+  }
+}
+%btn-8{
+  margin-top: 50px;
+  float:left;
+  width: 25%;
+  a{
+    display:block;
+    width: 157px;
+    height: 157px;
+    margin:0 auto;
+    background: url('../img/wrap.png') 
+    no-repeat;
+    background-position:-900px -228px;
+    position:relative;
+  }
+}
+
