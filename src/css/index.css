@@ -2,7 +2,7 @@
 
 .header-bar ul:nth-child(1) > li:nth-child(1) ul li a:hover, .header-bar ul:nth-child(1) > li:nth-child(2) ul li a:hover { color: red; }
 
-nav ul li a, nav .allgoods:hover > a, nav .allgoods > .b-l > li > a, nav .allgoods > .b-l .b-r li a { height: 45px; line-height: 45px; font-size: 14px; }
+nav ul > li a, nav .allgoods:hover > a, nav .allgoods > .b-l > li > a, nav .allgoods > .b-l .b-r li a { height: 45px; line-height: 45px; font-size: 14px; }
 
 .quanqiugou .btn-1 { float: left; width: 25%; }
 
@@ -86,19 +86,23 @@ header .cart a { display: block; width: 124px; height: 44px; background: #ececec
 
 header .cart a span:nth-child(1) { color: red; }
 
-nav ul li { position: relative; float: left; }
+.fixed { position: fixed; z-index: 20; left: 0; right: 0; top: 0; height: 57px; margin-top: 5px; background: rgba(255, 255, 255, 0.6); }
 
-nav ul li img { position: absolute; left: 30px; top: 0; }
+.fixed .serach-hot, .fixed .cart { display: none; }
 
-nav ul li a { display: block; padding: 0 20px; }
+nav ul > li { position: relative; float: left; }
 
-nav .allgoods { background: #163672; }
+nav ul > li img { position: absolute; left: 30px; top: 0; }
+
+nav ul > li a { display: block; padding: 0 20px; }
+
+nav .allgoods { width: 160px; background: #163672; }
 
 nav .allgoods:hover .b-l { display: block; }
 
 nav .allgoods:hover > a { display: block; width: 160px; background: #163672; padding-left: 26px; font-weight: 500; color: #fff; }
 
-nav .allgoods > .b-l { display: none; width: 160px; background: #183d83; position: relative; border: 1px solid #183d83; }
+nav .allgoods > .b-l { display: none; width: 160px; background: #183d83; position: absolute; z-index: 10; border: 1px solid #183d83; }
 
 nav .allgoods > .b-l > li:hover .b-r { display: block; }
 
@@ -126,13 +130,49 @@ nav .allgoods > .b-l .b-r .b-t { width: 80px; color: #333; margin-right: 20px; m
 
 .quanqiugou { margin-top: 50px; }
 
+.quanqiugou .btn-1 a { transition: top 1s; }
+
+.quanqiugou .btn-1 a:hover { transform: translateY(-40px); }
+
+.quanqiugou .btn-2 a { transition: top 1s; }
+
+.quanqiugou .btn-2 a:hover { transform: translateY(-40px); }
+
+.quanqiugou .btn-3 a { transition: top 1s; }
+
+.quanqiugou .btn-3 a:hover { transform: translateY(-40px); }
+
+.quanqiugou .btn-4 a { transition: top 1s; }
+
+.quanqiugou .btn-4 a:hover { transform: translateY(-40px); }
+
+.quanqiugou .btn-5 a { transition: top 1s; }
+
+.quanqiugou .btn-5 a:hover { transform: translateY(-40px); }
+
+.quanqiugou .btn-6 a { transition: top 1s; }
+
+.quanqiugou .btn-6 a:hover { transform: translateY(-40px); }
+
+.quanqiugou .btn-7 a { transition: top 1s; }
+
+.quanqiugou .btn-7 a:hover { transform: translateY(-40px); }
+
+.quanqiugou .btn-8 a { transition: top 1s; }
+
+.quanqiugou .btn-8 a:hover { transform: translateY(-40px); }
+
 .popular { padding-top: 50px; }
 
-.popular .titel-tps { height: 36px; line-height: 36px; margin-bottom: 20px; text-align: center; }
+.popular .titel-tps { height: 36px; line-height: 36px; margin-bottom: 10px; text-align: center; }
 
 .popular .titel-tps h2 { font-size: 24px; font-weight: 500; display: inline-block; }
 
 .popular .titel-tps p { margin-top: 10px; color: #999; float: right; line-height: 36px; }
+
+.popular .titelDetail { height: 20px; line-height: 20px; text-align: center; margin-bottom: 20px; }
+
+.popular .titelDetail a { display: inline-block; padding: 0 15px; }
 
 .popular .tab { border: 1px solid #ddd; border-bottom: none; }
 
@@ -153,3 +193,35 @@ nav .allgoods > .b-l .b-r .b-t { width: 80px; color: #333; margin-right: 20px; m
 .popular .tab .r-side ul li { float: left; text-align: center; width: 210px; padding: 0 5px; }
 
 .popular .tab .r-side ul li a { display: block; height: 66px; width: 200px; margin-top: 20px; border-bottom: 1px dashed #ddd; }
+
+.stairs { display: none; width: 50px; position: fixed; right: 0; top: 50%; transform: translate(0, -50%); background: rgba(255, 255, 255, 0.6); }
+
+.stairs p { width: 40px; height: 36px; line-height: 36px; text-align: center; }
+
+.stairs p:hover { color: red; }
+
+.stairs .totop { width: 40px; height: 40px; line-height: 40px; background: #ddd; text-align: center; }
+
+.show { display: block; }
+
+footer { background: #eee; color: #999; margin-top: 40px; border: 1px solid #ddd; font-size: 12px; }
+
+footer .bottom-l { width: 592px; }
+
+footer .bottom-l .img { padding: 15px 0; }
+
+footer .bottom-l p { height: 24px; line-height: 24px; }
+
+footer .bottom-c { width: 352px; padding-left: 50px; }
+
+footer .bottom-c p:nth-child(1) { padding-top: 20px; margin-bottom: 40px; }
+
+footer .bottom-c p:nth-child(3), footer .bottom-c p:nth-child(4) { padding-top: 20px; }
+
+footer .bottom-c a { padding: 0 10px; }
+
+footer .bottom-r { width: 160px; height: 198px; background: #e65050; text-align: center; }
+
+footer .bottom-r img { width: 114px; height: 114px; margin-top: 35px; margin-bottom: 15px; }
+
+footer .bottom-r p { color: #fff; font-size: 14px; }
