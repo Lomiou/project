@@ -1,0 +1,40 @@
+.r-0{color:red;}
+.g-0{color:#58bc58;}
+.b-0{color:blue;}
+.hide{display:none;}
+.show{display:block;}
+.main{
+  height: 600px;
+  background:url('../img/reg_bg.gif') no-repeat center;
+  .reg-viw{
+    width: 380px;
+    height: 410px;
+    position:absolute;
+    right:0;
+    top:50px;
+    background: #fff;
+    padding:30px 35px;
+    .reg-nav{
+      color:#999;
+      text-align: center;
+      font-size: 18px;
+      line-height: 45px;
+      font-weight: 700;
+      a{
+        padding:0 20px;
+      }
+    }
+    .btn-submit{
+      display: block;
+      width: 314px;
+      height: 45px;
+      line-height: 45px;
+      background: #ed4242;
+      border-radius:6px;
+      color:#fff;
+      text-align: center;
+      font-size: 18px;
+    }
+    
+  }
+}

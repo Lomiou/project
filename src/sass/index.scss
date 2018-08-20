@@ -143,16 +143,27 @@ header{
   }
 
 }
+.icon-new{
+  display: block;
+  width: 9px;
+  height: 14px;
+  background:url('../img/new.gif') no-repeat ;
+  position: absolute;
+  left:290px;
+  top:0;
+}
+
 nav{
   
   ul{
+    position:relative;
     >li{
-      position:relative;
-      img{
-        position:absolute;
-        left:30px;
-        top:0;
-      }
+      // position:relative;
+      // img{
+      //   position:absolute;
+      //   left:30px;
+      //   top:0;
+      // }
       float:left;
       a{
         @extend %nav-h ;
@@ -407,7 +418,6 @@ nav{
 footer{
   background: #eee;
   color:#999;
-  margin-top: 40px;
   border:1px solid #ddd;
   font-size: 12px;
   .bottom-l{

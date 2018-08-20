@@ -90,9 +90,11 @@ header .cart a span:nth-child(1) { color: red; }
 
 .fixed .serach-hot, .fixed .cart { display: none; }
 
-nav ul > li { position: relative; float: left; }
+.icon-new { display: block; width: 9px; height: 14px; background: url("../img/new.gif") no-repeat; position: absolute; left: 290px; top: 0; }
 
-nav ul > li img { position: absolute; left: 30px; top: 0; }
+nav ul { position: relative; }
+
+nav ul > li { float: left; }
 
 nav ul > li a { display: block; padding: 0 20px; }
 
@@ -204,7 +206,7 @@ nav .allgoods > .b-l .b-r .b-t { width: 80px; color: #333; margin-right: 20px; m
 
 .show { display: block; }
 
-footer { background: #eee; color: #999; margin-top: 40px; border: 1px solid #ddd; font-size: 12px; }
+footer { background: #eee; color: #999; border: 1px solid #ddd; font-size: 12px; }
 
 footer .bottom-l { width: 592px; }
 

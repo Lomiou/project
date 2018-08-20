@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>用户注册</title>
+  <script src="../lib/jquery-3.2.1.js"></script>
+  <link rel="stylesheet" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+  <div class="site-header"></div>
+  <div class="main">
+    <div class="container" style="position: relative;">
+      <div class="reg-viw">
+        <div class="reg-nav">
+          <a href="#">邮箱注册</a>
+          <a href="#">手机号注册</a>
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="电子邮箱">
+            <p class="r-0 hide">请输入正确的邮箱地址</p>
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" id="inputPassword3" placeholder="请输入密码">
+            <p class="r-0 hide">请先输入密码</p>
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" id="inputPassword2" placeholder="请再次输入密码">
+            <p class="r-0"></p>
+        </div>
+        <div class="form-group">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> 我同意<a href="#" class="b-0">《用户注册协议》</a>
+            </label>
+          </div>
+        </div>
+        <input type="button" class="btn-submit" value="同意协议并注册">
+        <p style="margin-top: 10px;">已有账号？<a href="#" class="b-0">去登录</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="footer"></div>
+  <script>
+    $('.site-header').load('./header.html');
+    $('.footer').load('./footer.html');
+  </script>
+</body>
+</html>
