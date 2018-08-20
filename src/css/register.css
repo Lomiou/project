@@ -8,6 +8,8 @@
 
 .show { display: block; }
 
+.active { border-bottom: 2px solid #f00; }
+
 .main { height: 600px; background: url("../img/reg_bg.gif") no-repeat center; }
 
 .main .reg-viw { width: 380px; height: 410px; position: absolute; right: 0; top: 50px; background: #fff; padding: 30px 35px; }
@@ -17,3 +19,5 @@
 .main .reg-viw .reg-nav a { padding: 0 20px; }
 
 .main .reg-viw .btn-submit { display: block; width: 314px; height: 45px; line-height: 45px; background: #ed4242; border-radius: 6px; color: #fff; text-align: center; font-size: 18px; }
+
+.main .reg-viw .phoneReg { display: none; }

@@ -356,26 +356,27 @@ nav{
     }
     //右边轮播
     .r-side{
-      width: 210px;
+      width: 240px;
       height: 345px;
       overflow: hidden;
       position:relative;
       ul{
         overflow: hidden;
-        width: 630px;
+        width: 720px;
         position:absolute;
         left:0;
         top:0;
         li{
           float:left;
           text-align: center;
-          width: 210px;
+          width: 240px;
           padding:0 5px;
           a{
             display: block;
             height: 66px;
             width: 200px;
             margin-top: 20px;
+            margin-left: 15px;
             border-bottom: 1px dashed #ddd;
           }
         }

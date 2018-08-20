@@ -188,13 +188,13 @@ nav .allgoods > .b-l .b-r .b-t { width: 80px; color: #333; margin-right: 20px; m
 
 .popular .tab .activety { position: relative; float: left; width: 720px; margin: 0 -1px; border-left: 1px solid #ddd; border-right: 1px solid #ddd; }
 
-.popular .tab .r-side { width: 210px; height: 345px; overflow: hidden; position: relative; }
+.popular .tab .r-side { width: 240px; height: 345px; overflow: hidden; position: relative; }
 
-.popular .tab .r-side ul { overflow: hidden; width: 630px; position: absolute; left: 0; top: 0; }
+.popular .tab .r-side ul { overflow: hidden; width: 720px; position: absolute; left: 0; top: 0; }
 
-.popular .tab .r-side ul li { float: left; text-align: center; width: 210px; padding: 0 5px; }
+.popular .tab .r-side ul li { float: left; text-align: center; width: 240px; padding: 0 5px; }
 
-.popular .tab .r-side ul li a { display: block; height: 66px; width: 200px; margin-top: 20px; border-bottom: 1px dashed #ddd; }
+.popular .tab .r-side ul li a { display: block; height: 66px; width: 200px; margin-top: 20px; margin-left: 15px; border-bottom: 1px dashed #ddd; }
 
 .stairs { display: none; width: 50px; position: fixed; right: 0; top: 50%; transform: translate(0, -50%); background: rgba(255, 255, 255, 0.6); }
 

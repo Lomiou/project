@@ -29,6 +29,7 @@ body {
 .container {  /*内容、版心 提取 */
     width: 1200px;
     margin:0 auto;
+    padding:0;
 }
 .fl {
     float:left;

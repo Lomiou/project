@@ -7,7 +7,7 @@ jQuery($=>{
     if(idx >= 3){
       idx = 0;
     }
-    oul.animate({'left':-idx * '210'},1500)
+    oul.animate({'left':-idx * '240'},1500)
   },3000);
  
 });

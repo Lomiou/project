@@ -9,34 +9,43 @@
   background:url('../img/reg_bg.gif') no-repeat center;
   .reg-viw{
     width: 380px;
-    height: 410px;
+    height: 355px;
+    margin-top: 70px;
     position:absolute;
     right:0;
     top:50px;
     background: #fff;
     padding:30px 35px;
-    .reg-nav{
+    h3{
       color:#999;
       text-align: center;
       font-size: 18px;
       line-height: 45px;
       font-weight: 700;
-      a{
-        padding:0 20px;
+   
+    }
+    .code{
+      position: relative;
+      .authcode{
+        position:absolute;
+        right:0;
+        top:0;
+        width: 120px;
+        height: 34px;
+        background: skyblue;
+        border-radius: 6px;
       }
     }
-    .btn-submit{
-      display: block;
-      width: 314px;
+    .btn-login{
       height: 45px;
+      background: #c80606;
       line-height: 45px;
-      background: #ed4242;
-      border-radius:6px;
-      color:#fff;
       text-align: center;
+      color:#fff;
       font-size: 18px;
+      border-radius: 6px;
+      width:100%;
+      margin-top: 10px;
     }
-    
-    .phoneReg{display:none;}
   }
 }
