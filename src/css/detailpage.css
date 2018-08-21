@@ -1,0 +1,107 @@
+.ml-10 { margin-left: 10px; }
+
+.d-ib { display: inline-block; }
+
+.ml-40 { margin-left: 40px; }
+
+.r-0 { color: #ed4242; }
+
+.g-0 { color: #58bc58; }
+
+.active { border: 2px solid #ed4242; }
+
+.goods { padding: 10px; margin-bottom: 30px; }
+
+.goods .goodsbox { width: 460px; }
+
+.goods .goodsbox .pic { width: 460px; height: 460px; border: 1px solid #ddd; overflow: hidden; }
+
+.goods .goodsbox .pic img { display: block; width: 460px; height: 460px; }
+
+.goods .goodsbox .smallpic { width: 460px; height: 64px; margin-top: 10px; text-align: center; overflow: hidden; }
+
+.goods .goodsbox .smallpic li { display: inline-block; margin-right: 10px; }
+
+.goods .goodsbox .smallpic li img { display: block; width: 60px; height: 60px; }
+
+.goods .detail { width: 660px; position: relative; }
+
+.goods .detail .tit { margin-bottom: 10px; }
+
+.goods .detail .tit span { display: inline-block; width: 48px; height: 22px; background: #ed4242; border-radius: 5px; padding: 3px 10px; }
+
+.goods .detail .tit h1 { font-size: 18px; line-height: 30px; }
+
+.goods .detail p { color: #616161; line-height: 2; margin-bottom: 10px; }
+
+.goods .detail .shuoming { background: #f1f1f1; color: #999; padding: 10px 5px; margin: 10px 0; }
+
+.goods .detail dl { margin-bottom: 20px; overflow: hidden; }
+
+.goods .detail dl dt { float: left; width: 60px; line-height: 30px; }
+
+.goods .detail dl dd { float: left; width: 580px; }
+
+.goods .detail dl dd #cnp { color: #ed4242; font-size: 24px; padding: 0 7px; font-weight: 500; }
+
+.goods .detail dl dd #usa { color: #333; font-size: 12px; }
+
+.goods .detail .size { margin-bottom: 20px; }
+
+.goods .detail .size .chicun { width: 60px; line-height: 30px; color: #616161; }
+
+.goods .detail .size ul li { margin-right: 5px; display: inline-block; }
+
+.goods .detail .size ul li a { display: block; width: 30px; height: 30px; line-height: 30px; text-align: center; border: 1px solid #ddd; }
+
+.goods .detail .qty { margin-bottom: 20px; }
+
+.goods .detail .qty p { float: left; width: 60px; line-height: 31px; color: #616161; }
+
+.goods .detail .qty .shuliang { float: left; width: 580px; }
+
+.goods .detail .qty .shuliang input { width: 44px; height: 30px; line-height: 30px; color: #666; font-size: 12px; padding: 3px 2px 0 10px; border: 1px solid #ddd; }
+
+.goods .detail .qty .shuliang em { font-style: normal; margin-left: 30px; }
+
+.goods .detail .goods-car { margin-left: 60px; margin-bottom: 10px; }
+
+.goods .detail .goods-car a { display: inline-block; width: 178px; height: 44px; line-height: 44px; font-size: 16px; text-align: center; }
+
+.goods .detail .goods-car a:nth-child(1) { margin-right: 20px; background: #ffebeb; border: 1px solid #ed4242; color: #ff6600; }
+
+.goods .detail .goods-car a:nth-child(2) { background: #ed4242; border: 1px solid #ed4242; color: #fff; }
+
+.goods .detail .goods-car a:nth-child(3) { color: #333; background-color: #fff; border: 1px solid #ccc; margin-left: 20px; }
+
+.goods .detail .succeed { position: absolute; z-index: 8; background: #fff; bottom: 120px; width: 378px; height: 100px; text-align: center; border: 1px solid #ed4242; box-shadow: 2px 2px 4px #e3e3e3; display: none; }
+
+.goods .detail .succeed p { line-height: 100px; color: #58bc58; font-size: 24px; }
+
+.introduce { margin-top: 50px; }
+
+.introduce > ul { height: 50px; line-height: 50px; text-align: center; border-bottom: 2px solid #ed4242; }
+
+.introduce > ul > li { display: inline-block; width: 170px; height: 50px; line-height: 50px; font-size: 18px; }
+
+.introduce .list { width: 190px; padding: 0 10px; margin-right: 10px; background: #fff; text-align: center; }
+
+.introduce .list h3 { height: 42px; line-height: 42px; border-bottom: 1px solid #ddd; }
+
+.introduce .list ul { width: 170px; }
+
+.introduce .list ul li { border-bottom: 1px solid #ed4242; }
+
+.introduce .list ul li a { display: block; width: 170px; height: 28px; line-height: 28px; }
+
+.introduce .imgs { width: 800px; }
+
+.introduce .r-side { width: 190px; }
+
+.introduce .r-side h3 { height: 42px; line-height: 42px; text-align: center; border-bottom: 1px solid #ddd; }
+
+.introduce .r-side a { width: 190px; padding: 20px 0; }
+
+.introduce .r-side img { width: 190px; height: 190px; }
+
+.introduce .r-side p { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
