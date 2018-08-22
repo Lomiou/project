@@ -3,6 +3,10 @@
   color:#ee4242!important;
   border:1px solid #ee4242!important;
 }
+.active{
+  background-color:#fc0!important;
+  color:#fff!important;
+}
 main{
   .crumb{
     p:nth-child(1){
@@ -34,6 +38,36 @@ main{
         color:#777;
         // box-sizing: border-box;
         border:1px solid #fff;
+      }
+    }
+  }
+  .list{
+    width: 1200px;
+    ul{
+      overflow: hidden;
+      li{
+        float:left;
+        width: 235px;
+        height: 300px;
+        border:1px solid #ddd;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        img{
+          width: 225px;
+          height: 225px;
+        }
+        p{
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+    
+    .page{
+      text-align: center;
+      span{
+        display:inline-block;margin:5px;width:40px;line-height:1.8;text-align: center;background-color:#dfdfdf;color:#666;
       }
     }
   }

@@ -1341,7 +1341,7 @@
     <span>每天一点小期待</span>
    </div>
    <div class="newgoods-list">
-     <div class="bd">
+     <div class="bd clearfix">
        <ul></ul>
        <ul></ul>
        <ul></ul>
@@ -1350,7 +1350,6 @@
      </div>
    </div>
   </div>
-
    <!-- end---新品上架 -->
    <!-- 热卖推介 -->
    <div class="newgoods">
@@ -2380,7 +2379,7 @@
   <div class="totop">TOP↑</div>
 </div>
 <!-- 尾部 -->
-<footer>
+<footer style="margin-top:40px;">
   <div class="container clearfix">
     <div class="bottom-l fl">
       <div class="img"><img src="./img/geo.png" alt=""></div> 
@@ -2403,48 +2402,6 @@
   </div>
 </footer>
 <!-- end -->
-<script>
-  jQuery($=>{
-    //吸顶菜单
-    let xd = $('header');
-    let doc = $(document);
-    let win = $(window);
-    win.on('scroll',function(){
-      if(doc.scrollTop() > 500){
-        xd.addClass('fixed');
-      }else{
-        xd.removeClass('fixed');
-      }
-    })
-
-    //楼梯菜单
-    let popular = $('.popular');
-    let stairs = $('.stairs');
-    let stairsli = $('.stairs p');
-    // let $i = stairsli.children('i')
-    //显示楼梯菜单
-    win.on('scroll',function(){
-      let $scroll = $(this).scrollTop();
-      if($scroll >= 1200){
-        stairs.addClass('show');
-      }else{
-        stairs.removeClass('show');
-      }
-    });
-    
-    // 点击楼梯跟换当前模块
-    stairsli.on('click',function(){
-      $('html').animate({
-        scrollTop: popular.eq($(this).index()).offset().top
-      },1000)
-    })
-    //回到顶部
-    $('.stairs .totop').on('click',function(){
-      $('html').animate({
-        scrollTop : 0
-      },1000)
-    })
-  })
-</script>
+<script src="./js/require.js" data-main="./js/index"></script>
 </body>
 </html>

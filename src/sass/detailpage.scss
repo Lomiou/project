@@ -191,7 +191,7 @@
   >ul{
     height: 50px;
     line-height: 50px;
-    text-align: center;
+    // text-align: center;
     border-bottom: 2px solid #ed4242;
     >li{
       display:inline-block;
@@ -201,6 +201,24 @@
       font-size: 18px;
     }
   }
+  // .xiding{
+  //   width: 224px;
+  //   height: 50px;
+  //   margin-right: 200px;
+  //   overflow: hidden;
+  //   // display: none;
+  //   .t-l img{
+  //     width: 40px;
+  //     height: 40px;
+  //     display: block;
+  //   }
+  //   .t-r strong{
+  //     white-space: nowrap;
+  //     overflow: hidden;
+  //     text-overflow: ellipsis;
+  //   }
+  // }
+
   .list{
     width: 190px;
     padding:0 10px;
