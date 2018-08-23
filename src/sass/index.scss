@@ -277,7 +277,8 @@ nav{
   .newgoods-list{
     width: 1200px;
     height: 781px;
-    overflow: hidden!important;
+    overflow: hidden;
+    position: relative;
     .bd{
       width: 6000px;
       height: 780px;

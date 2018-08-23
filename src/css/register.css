@@ -1,8 +1,8 @@
-.r-0 { color: red; }
+.r-0 { color: red !important; }
 
-.g-0 { color: #58bc58; }
+.g-0 { color: #58bc58 !important; }
 
-.b-0 { color: blue; }
+.b-0 { color: blue !important; }
 
 .hide { display: none; }
 

@@ -80,7 +80,7 @@
 
 .introduce { margin-top: 50px; }
 
-.introduce > ul { height: 50px; line-height: 50px; border-bottom: 2px solid #ed4242; }
+.introduce > ul { height: 50px; line-height: 50px; text-align: center; border-bottom: 2px solid #ed4242; }
 
 .introduce > ul > li { display: inline-block; width: 170px; height: 50px; line-height: 50px; font-size: 18px; }
 

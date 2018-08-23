@@ -134,7 +134,7 @@ nav .allgoods > .b-l .b-r .b-t { width: 80px; color: #333; margin-right: 20px; m
 
 .newgoods .newgoods-t span { color: #999; display: inline-block; margin-left: 5px; }
 
-.newgoods .newgoods-list { width: 1200px; height: 781px; overflow: hidden !important; }
+.newgoods .newgoods-list { width: 1200px; height: 781px; overflow: hidden; position: relative; }
 
 .newgoods .newgoods-list .bd { width: 6000px; height: 780px; position: absolute; }
 

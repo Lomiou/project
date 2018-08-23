@@ -45,14 +45,28 @@ require(['config'],function(){
             }
           }
           page.appendTo(list);
+
+           //点击切换分页
+          $('.list .page').on('click','span',function(e){
+            _pageNo = $(this).text();
+            $.get("../api/goodslist.php",{qty:"40",pageNo:_pageNo})
+          })
+
+          //页面数据传递
+          $('.list li').on('click',function(){
+            var goods = data.data[$(this).index()];
+            console.log(goods)
+            var params = '';
+            for(var key in goods){
+              params += key +'='+ goods[key]+'&';
+            }
+            params = params.slice(0,-1);
+            location.href = '../html/detailpage.html?' + params;
+          })
           
       },
       "json"
     )
-    //点击切换分页
-    $('.list .page').on('click','span',function(e){
-      _pageNo = $(this).text();
-      $.get("../api/goodslist.php",{"qty":"40","pageNo":"_pageNo"})
-    })
+   
   })
 })
