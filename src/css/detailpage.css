@@ -8,6 +8,8 @@
 
 .g-0 { color: #58bc58; }
 
+.show { display: block; }
+
 .active { border: 2px solid #ed4242; }
 
 .goods { padding: 10px; margin-bottom: 30px; }

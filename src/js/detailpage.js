@@ -1,20 +1,9 @@
 require(['config'],function(){
-  require(['jquery','lxzoom'],function($){
+  require(['jquery','lxzoom','common'],function($){
     //引入头尾
     $('.site-header').load('./header.html');
     $('.footer').load('./footer.html');
-    // $('.goodsbox .pic span')
-    // console.log($('.size li a'))
-    // console.log($('.goodsbox .pic span'))
   
-    //放大镜插件，感谢老谢的贡献
-    // $('.goodsbox .pic').lxzoom({width:460,height:460});
-    // $('.smallpic').on('mouseenter','img',function(){
-    //   $('.goodsbox .pic img').attr({
-    //     'src':this.src,
-    //     'data-big':this.dataset.big
-    //   });
-    // })
     
     //获取页面传递信息
     function GetRequest(){
@@ -32,7 +21,7 @@ require(['config'],function(){
     var Request = new Object();
     Request = GetRequest();
     var $id =  Request.id;
-    console.log
+    
     $.ajax({
       url:"../api/detailpage.php",
       data:{id : $id},
@@ -128,11 +117,67 @@ require(['config'],function(){
         $('.size li').on('mouseenter',function(){
           $(this).addClass('active').siblings().removeClass('active');
         });
-
-        console.log($('.goods-car a').eq(1))
+        // var goodslist = Cookie.get(goodslist);
+        
+        //   if(goodslist ===''){
+        //     goodslist = []
+        //     }else{
+        //     goodslist = JSON.parse(goodslist);
+        //   };
+        var goodslist = localStorage.getItem('key');
+        
+          if(goodslist ===null){
+            goodslist = []
+            }else{
+            goodslist = JSON.parse(goodslist);
+          };
+          console.log(goodslist)
+        $('.goods-car a').eq(1).on('click',function(){
+          let qty = $('.qty input').val();
+     
+          var good = {
+            id:data.id,
+            titel:data.titel,
+            imgurl:data.imgurl,
+            cnprice:data.cnprice,
+            qty:qty
+          }
+          goodslist.push(good);
+          localStorage.setItem('key',JSON.stringify(goodslist))
+          // Cookie.set('goodslist',JSON.stringify(goodslist));
+          $('.succeed').addClass('show');
+          
+        })
+        $('.succeed').on('click',function(){
+          $('.succeed').removeClass('show');
+        })
+        
+    
       }
     })
-    
+    // function SetCookie( name, value)
+    //     {
+    //         var Days = 1; 
+    //         var exp  = new Date();   
+    //         exp.setTime(exp.getTime() + Days*24*60*60*1000);
+    //         document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
+    //     }
+    //     function getCookie(name)//取cookies函数        
+    //     {
+    //         var arr = document.cookie.match(new RegExp("(^| )"+name+"=([^;]*)(;|$)"));
+    //         if(arr != null)
+    //           return unescape(arr[2]); 
+             
+    //         return null;
+        
+    //     }
+    //     function delCookie(name)//删除cookie
+    //     {
+    //         var exp = new Date();
+    //         exp.setTime(exp.getTime() - 1);
+    //         var cval=getCookie(name);
+    //         if(cval!=null) document.cookie= name + "="+cval+";expires="+exp.toGMTString();
+    //     }
    
     //从数据库获取商品信息
     // $.ajax({

@@ -94,8 +94,12 @@ require(['config'],function(){
       });
       
       $('.btn-submit').on('click',function(){
-        
-        if(!$('.checkbox #pdu')[0].checked){
+        $email = $('#inputEmail3').val();
+        $password1 = $('#inputPassword3').val();
+        if($email ==='' || $password1 ===''){
+          alert('请输入邮箱或密码');
+          return false;
+        }else if(!$('.checkbox #pdu')[0].checked){
           alert('请勾选用户协议');
           return false;
         }else{

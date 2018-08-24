@@ -30,6 +30,25 @@
         margin: 0;
       }
     }
+    .glist{
+      padding:0 10px;
+      li{
+        height: 100px;
+        line-height: 100px;
+        span{
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        img{
+          width: 100px;
+          height: 100px;
+          display: block;
+          float:left;
+        }
+
+      }
+    }
     .omit{
       height: 50px;
       padding:10px;

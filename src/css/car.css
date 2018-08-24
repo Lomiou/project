@@ -14,6 +14,14 @@
 
 .box-hd dl dt input { margin: 0; }
 
+.box-hd dl .glist { padding: 0 10px; }
+
+.box-hd dl .glist li { height: 100px; line-height: 100px; }
+
+.box-hd dl .glist li span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.box-hd dl .glist li img { width: 100px; height: 100px; display: block; float: left; }
+
 .box-hd dl .omit { height: 50px; padding: 10px; border-bottom: 1px dashed #ddd; }
 
 .box-hd dl .omit span { display: inline-block; height: 30px; line-height: 30px; }
