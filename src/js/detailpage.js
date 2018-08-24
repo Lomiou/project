@@ -148,44 +148,39 @@ require(['config'],function(){
           $('.succeed').addClass('show');
           
         })
+        //立即购买
+        $('.goods-car a').eq(0).on('click',function(){
+          let qty = $('.qty input').val();
+     
+          var good = {
+            id:data.id,
+            titel:data.titel,
+            imgurl:data.imgurl,
+            cnprice:data.cnprice,
+            qty:qty
+          }
+          goodslist.push(good);
+          localStorage.setItem('key',JSON.stringify(goodslist))
+          window.location.reload()
+          $(location).attr('href','../html/car.html')
+        })
         $('.succeed').on('click',function(){
           $('.succeed').removeClass('show');
         })
+
+        $('.introduce .spjs a').on('click',function(){
+          $('.imgs').addClass('show').removeClass('hide');
+          $('.pinlun').addClass('hide').removeClass('show');
+        })
+        $('.introduce .sppj a').on('click',function(){
+          $('.imgs').addClass('hide').removeClass('show');
+          $('.pinlun').addClass('show').removeClass('hide');
+        })
+
         
-    
       }
     })
-    // function SetCookie( name, value)
-    //     {
-    //         var Days = 1; 
-    //         var exp  = new Date();   
-    //         exp.setTime(exp.getTime() + Days*24*60*60*1000);
-    //         document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
-    //     }
-    //     function getCookie(name)//取cookies函数        
-    //     {
-    //         var arr = document.cookie.match(new RegExp("(^| )"+name+"=([^;]*)(;|$)"));
-    //         if(arr != null)
-    //           return unescape(arr[2]); 
-             
-    //         return null;
-        
-    //     }
-    //     function delCookie(name)//删除cookie
-    //     {
-    //         var exp = new Date();
-    //         exp.setTime(exp.getTime() - 1);
-    //         var cval=getCookie(name);
-    //         if(cval!=null) document.cookie= name + "="+cval+";expires="+exp.toGMTString();
-    //     }
    
-    //从数据库获取商品信息
-    // $.ajax({
-    //   url:'../API/detailpage.php',
-    //   data:{id=$id},
-    // })
-
-    //点击添加购物车
    
   })
 })

@@ -16,16 +16,39 @@ require(['config'],function(){
     $('.glist').on('click','span.sc',function(){
       let currentLi = $(this).closest('li');
       let idx = currentLi.index();
-      console.log(idx)
-      console.log(goodslist)
       goodslist.splice(idx,1)
-      console.log(goodslist)
       localStorage.setItem('key',JSON.stringify(goodslist));
       render();
     })
+    //全选
+    var checkbox = $('.box-hd .glist :checkbox');
+   
+    $('.box-hd #all').on('click',function(){
+      checkbox.prop('checked',this.checked);
+    })
+    //删除选中商品
+    $('.omit #btn').on('click',function(){
+      let oli = checkbox.filter(':checked').closest('li');
+      for(let i = 0; i < oli.length;i++){
+        let num = $(oli[i]).index();
+        console.log(num)
+        goodslist.splice(num-i,1); 
+      }
+      localStorage.setItem('key',JSON.stringify(goodslist));
+      render();
+      window.location.reload();
+    })
+    //清空购物车
+    $('.omit #clearall').on('click',function(){
+      goodslist = [];
+      localStorage.setItem('key',JSON.stringify(goodslist));
+      render();
+    })
+    
 
 
     function render(){ 
+
       var glist = $('.box-hd dd.glist');
       var zong = $('.jies .jiesuan .r-0');
       
@@ -44,7 +67,7 @@ require(['config'],function(){
         <span class="col-md-2 r-0">￥${a.cnprice}</span>
         <span class="col-md-2">${a.qty}</span>
         <span class="col-md-2 r-0">￥${a.cnprice}</span>
-        <span class="col-md-1 sc">X</span>
+        <span class="col-md-1 sc" style="cursor: pointer;">X</span>
         </li>`
       }).join('\n')
       

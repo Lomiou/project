@@ -10,6 +10,8 @@
 
 .show { display: block; }
 
+.hide { display: none; }
+
 .active { border: 2px solid #ed4242; }
 
 .goods { padding: 10px; margin-bottom: 30px; }
