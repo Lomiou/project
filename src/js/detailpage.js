@@ -42,10 +42,10 @@ require(['config'],function(){
           <div class="smallpic">
             <ul class="clearfix">
               <li><img src="${data.imgurl}" ></li>
-              <li><img src="../img/pic2.jpg" ></li>
-              <li><img src="../img/pic3.jpg" ></li>
-              <li><img src="../img/pic4.jpg" ></li>
-              <li><img src="../img/pic5.jpg" ></li>
+              <li><img src="../img/pic2_big.jpg" data-big="../img/pic2_big.jpg"></li>
+              <li><img src="../img/pic3_big.jpg" data-big="../img/pic3_big.jpg"></li>
+              <li><img src="../img/pic4_big.jpg" data-big="../img/pic4_big.jpg"></li>
+              <li><img src="../img/pic5_big.jpg" data-big="../img/pic5_big.jpg"></li>
             </ul>
           </div>
         </div>
@@ -117,13 +117,17 @@ require(['config'],function(){
         $('.size li').on('mouseenter',function(){
           $(this).addClass('active').siblings().removeClass('active');
         });
-        // var goodslist = Cookie.get(goodslist);
-        
-        //   if(goodslist ===''){
-        //     goodslist = []
-        //     }else{
-        //     goodslist = JSON.parse(goodslist);
-        //   };
+
+        //放大镜
+        // $('.pic').addClass('box').lxzoom({width:500,height:200});
+
+        // $('.smallpic').on('mouseenter','img',function(){
+        //   $('.pic img').attr({
+        //     'src':this.src,
+        //     'data-big':this.dataset.big
+        //   });
+        // })
+
         var goodslist = localStorage.getItem('key');
         
           if(goodslist ===null){
@@ -131,7 +135,7 @@ require(['config'],function(){
             }else{
             goodslist = JSON.parse(goodslist);
           };
-          console.log(goodslist)
+       
         $('.goods-car a').eq(1).on('click',function(){
           let qty = $('.qty input').val();
      
@@ -177,10 +181,63 @@ require(['config'],function(){
           $('.pinlun').addClass('show').removeClass('hide');
         })
 
-        
+ 
+
       }
     })
-   
+           //商品评分
+  
+           let $li = $('.star li');
+           let $len = $li.length;
+           $li.on('mouseenter',function(){
+             let idx = $(this).index();
+               for(let i = 0; i < $len; i++){
+                 if( i<= idx){
+                   $li[i].className = 'xing';
+                 }else{
+                   $li[i].className = '';
+                 }
+               }
+           })
+           //商品评论
+           var msg = localStorage.getItem('pl');
+        
+           if(msg ===null){
+             msg = []
+             }else{
+             msg = JSON.parse(msg);
+           };
+           render();
+           $('.pinlun button').on('click',function(){
+             let _msg = $('#msg').val();
+             console.log(_msg)
+             var now=  new Date();
+
+             time = now.toLocaleDateString();
+             var xinxi = {
+               name:"laoxlie666@163.com",
+               time:time,
+               xingxing:'../img/start.PNG',
+               msg:_msg
+             }
+             
+            msg.push(xinxi);console.log(msg)
+            localStorage.setItem('pl',JSON.stringify(msg));
+            render();
+            $('#msg').val('');
+            $('#msg').focus();
+           })
+           function render(){
+            $('.pinlun dd').html(msg.map(a=>{
+              return `
+                <li>
+                <span>${a.name}</span>
+                <span>${a.time}</span>
+                <span><img src="${a.xingxing}"></span>
+                <span>${a.msg}</span>
+                </li>`
+            }).join(''))
+           }
    
   })
 })

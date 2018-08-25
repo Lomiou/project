@@ -8,6 +8,7 @@
 .active{
   border:2px solid #ed4242;
 }
+
 .goods{
   padding:10px;
   margin-bottom: 30px;
@@ -227,6 +228,7 @@
     margin-right: 10px;
     background: #fff;
     text-align: center;
+    margin-top: 10px;
     h3{
       height: 42px;
       line-height: 42px;
@@ -247,9 +249,61 @@
   }
   .imgs{
     width: 800px;
+    margin-top: 50px;
+  }
+  .pinlun{
+    width:800px;
+    margin-top: 50px;
+    padding-left: 50px;
+    h3{
+      margin-bottom: 20px;
+    }
+    .star{
+      overflow: hidden;
+      li{
+        width: 27px;
+        height: 27px;
+        float:left;
+        background: url('../img/star.gif');
+        
+      }
+      .xing{background-position:0 -29px;}
+    }
+    .msgs{
+      margin-top: 20px;
+    }
+    .pinfen{
+      margin: 40px 0;
+    }
+    dt{
+      background: #f9f9f9;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+    }
+    span{
+      display:inline-block;
+      width: 180px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    dd{
+      background: #fff;
+    }
+    
+    p{
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      background: #adadad;
+    }
   }
   .r-side{
     width: 190px;
+    margin-top: 10px;
     h3{
       height: 42px;
       line-height: 42px;

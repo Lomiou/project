@@ -68,7 +68,7 @@ $(function($){
         clearInterval(timer);
       },
       mouseleave:function(){
-        $(this).children('a').children('.fd').animate({bottom:-80},1000);
+        $(this).children('a').children('.fd').animate({bottom:-80},400);
         autoplay();
       }
     })
@@ -136,10 +136,10 @@ $(function($){
         
         $('.list-clear ul li').bind({
           mouseenter:function(){
-            $(this).children('a').children('.ffd').animate({bottom:0},1000)
+            $(this).children('a').children('.ffd').animate({bottom:0},800)
           },
           mouseleave:function(){
-            $(this).children('a').children('.ffd').animate({bottom:-80},1000)
+            $(this).children('a').children('.ffd').animate({bottom:-80},400)
           }
         })
         

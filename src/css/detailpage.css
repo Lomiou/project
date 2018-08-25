@@ -88,7 +88,7 @@
 
 .introduce > ul > li { display: inline-block; width: 170px; height: 50px; line-height: 50px; font-size: 18px; }
 
-.introduce .list { width: 190px; padding: 0 10px; margin-right: 10px; background: #fff; text-align: center; }
+.introduce .list { width: 190px; padding: 0 10px; margin-right: 10px; background: #fff; text-align: center; margin-top: 10px; }
 
 .introduce .list h3 { height: 42px; line-height: 42px; border-bottom: 1px solid #ddd; }
 
@@ -98,9 +98,31 @@
 
 .introduce .list ul li a { display: block; width: 170px; height: 28px; line-height: 28px; }
 
-.introduce .imgs { width: 800px; }
+.introduce .imgs { width: 800px; margin-top: 50px; }
 
-.introduce .r-side { width: 190px; }
+.introduce .pinlun { width: 800px; margin-top: 50px; padding-left: 50px; }
+
+.introduce .pinlun h3 { margin-bottom: 20px; }
+
+.introduce .pinlun .star { overflow: hidden; }
+
+.introduce .pinlun .star li { width: 27px; height: 27px; float: left; background: url("../img/star.gif"); }
+
+.introduce .pinlun .star .xing { background-position: 0 -29px; }
+
+.introduce .pinlun .msgs { margin-top: 20px; }
+
+.introduce .pinlun .pinfen { margin: 40px 0; }
+
+.introduce .pinlun dt { background: #f9f9f9; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+
+.introduce .pinlun span { display: inline-block; width: 180px; height: 50px; line-height: 50px; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.introduce .pinlun dd { background: #fff; }
+
+.introduce .pinlun p { height: 36px; line-height: 36px; text-align: center; background: #adadad; }
+
+.introduce .r-side { width: 190px; margin-top: 10px; }
 
 .introduce .r-side h3 { height: 42px; line-height: 42px; text-align: center; border-bottom: 1px solid #ddd; }
 
